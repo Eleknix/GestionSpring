@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = { "fr.formation.inti.dao", "fr.formation.inti.service", "fr.formation.inti" })
+@ComponentScan(basePackages = {"fr.formation.inti" })
 @EnableTransactionManagement(proxyTargetClass = true)
 //Load to Environment
 @PropertySource("classpath:ds-hibernate-cfg.properties")
