@@ -15,12 +15,4 @@ public interface IGenericDao<T, I extends Serializable> {
 	T findById(I i);
 	
 	List<T> findAll();
-
-	void commitTransaction();
-	
-	void rollBackTransaction();
-	
-	void beginTransaction();
-	
-	void close();
 }
